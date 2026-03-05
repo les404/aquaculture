@@ -1,0 +1,70 @@
+/* ── CONTACT PAGE ── */
+
+.contact-wrap {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 48px;
+  display: flex;
+  gap: 64px;
+  align-items: flex-start;
+}
+.contact-left { flex: 1; }
+.contact-left h1 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 28px;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.contact-info-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.88rem;
+  color: #444;
+}
+.contact-info-row svg {
+  width: 18px;
+  height: 18px;
+  stroke: #333;
+  fill: none;
+  stroke-width: 1.8;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.contact-form-box {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 28px;
+  min-width: 320px;
+}
+.form-group { margin-bottom: 16px; }
+.form-group label {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #333;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 0.85rem;
+  font-family: inherit;
+  color: #333;
+  outline: none;
+}
+.form-group input:focus,
+.form-group textarea:focus { border-color: #3a6186; }
+.form-group textarea {
+  height: 90px;
+  resize: vertical;
+}
