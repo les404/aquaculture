@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin - Accounts</title>
+  <link rel="stylesheet" href="../../css/base.css"/>
+  <link rel="stylesheet" href="../../css/admin/admin-shell.css"/>
+  <link rel="stylesheet" href="../../css/admin/accounts.css"/>
+</head>
+<body class="admin-body">
+
+<div class="admin-layout">
+  <aside class="admin-sidebar">
+    <div class="admin-sidebar-header">
+      <div class="admin-logo">ADMIN</div>
+    </div>
+    <nav class="admin-nav">
+      <div class="admin-nav-section-label">Menu</div>
+      <a class="admin-nav-item" href="overview.html"><span>Overview</span></a>
+      <a class="admin-nav-item" href="products.html"><span>Products</span></a>
+      <a class="admin-nav-item" href="analytics.html"><span>Analytics</span></a>
+      <a class="admin-nav-item" href="customer.html"><span>Customer</span></a>
+
+      <div class="admin-nav-section-label">Others</div>
+      <a class="admin-nav-item" href="reports.html"><span>Reports</span></a>
+      <a class="admin-nav-item is-active" href="accounts.html"><span>Accounts</span></a>
+      <a class="admin-nav-item" href="history.html"><span>History Logs</span></a>
+      <a class="admin-nav-item" href="notifications.html"><span>Notifications</span></a>
+      <a class="admin-nav-item admin-logout" href="../home.html"><span>Logout</span></a>
+    </nav>
+  </aside>
+
+  <main class="admin-main">
+    <header class="admin-topbar">
+      <div class="admin-topbar-title">DASHBOARD</div>
+      <div class="admin-topbar-right">
+        <span class="admin-topbar-user">Welcome, Admin</span>
+      </div>
+    </header>
+
+    <div class="admin-panel accounts-layout">
+      <div class="accounts-left">
+        <h2>Create Employee Account</h2>
+        <div class="image-upload-placeholder">insert image</div>
+        <form class="accounts-form">
+          <div class="form-row">
+            <input type="text" placeholder="Last Name"/>
+            <input type="text" placeholder="First Name"/>
+            <input type="text" placeholder="Middle Name"/>
+          </div>
+          <div class="form-row">
+            <input type="text" placeholder="Address"/>
+            <input type="number" placeholder="Age"/>
+            <input type="text" placeholder="Gender"/>
+          </div>
+          <div class="form-row">
+            <input type="text" placeholder="Contact No."/>
+            <input type="email" placeholder="Email Address"/>
+          </div>
+          <div class="form-row">
+            <input type="text" placeholder="Employee Position"/>
+          </div>
+          <div class="form-actions">
+            <button type="button" class="btn-pill is-green">Add</button>
+            <button type="button" class="btn-pill is-blue">Edit</button>
+            <button type="button" class="btn-pill is-red">Delete</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="accounts-right">
+        <div class="kpi-card">
+          <div class="kpi-label">Total Employee</div>
+          <div class="kpi-value">3</div>
+        </div>
+        <div class="admin-panel slim">
+          <h3>Current Employee</h3>
+          <ul class="simple-list">
+            <li>Employee Name No 1</li>
+            <li>Employee Name No 2</li>
+            <li>Employee Name No 3</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="../../js/admin-nav-active.js"></script>
+</body>
+</html>
+

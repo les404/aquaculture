@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin - Notifications</title>
+  <link rel="stylesheet" href="../../css/base.css"/>
+  <link rel="stylesheet" href="../../css/admin/admin-shell.css"/>
+  <link rel="stylesheet" href="../../css/admin/notifications.css"/>
+</head>
+<body class="admin-body">
+
+<div class="admin-layout">
+  <aside class="admin-sidebar">
+    <div class="admin-sidebar-header">
+      <div class="admin-logo">ADMIN</div>
+    </div>
+    <nav class="admin-nav">
+      <div class="admin-nav-section-label">Menu</div>
+      <a class="admin-nav-item" href="overview.html"><span>Overview</span></a>
+      <a class="admin-nav-item" href="products.html"><span>Products</span></a>
+      <a class="admin-nav-item" href="analytics.html"><span>Analytics</span></a>
+      <a class="admin-nav-item" href="customer.html"><span>Customer</span></a>
+
+      <div class="admin-nav-section-label">Others</div>
+      <a class="admin-nav-item" href="reports.html"><span>Reports</span></a>
+      <a class="admin-nav-item" href="accounts.html"><span>Accounts</span></a>
+      <a class="admin-nav-item" href="history.html"><span>History Logs</span></a>
+      <a class="admin-nav-item is-active" href="notifications.html"><span>Notifications</span></a>
+      <a class="admin-nav-item admin-logout" href="../home.html"><span>Logout</span></a>
+    </nav>
+  </aside>
+
+  <main class="admin-main">
+    <header class="admin-topbar">
+      <div class="admin-topbar-title">DASHBOARD</div>
+      <div class="admin-topbar-right">
+        <span class="admin-topbar-user">Welcome, Admin</span>
+      </div>
+    </header>
+
+    <div class="notifications-panel">
+      <div class="admin-panel">
+        <div class="admin-panel-header">
+          <h2>Notifications</h2>
+        </div>
+        <div class="table-wrapper">
+          <table class="admin-table">
+            <thead>
+            <tr>
+              <th>Type &amp; Time</th>
+              <th>Title</th>
+              <th>Message</th>
+              <th>Time</th>
+              <th>Status</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>Order</td>
+              <td>New Order Received</td>
+              <td>New Order Received</td>
+              <td>2 mins ago</td>
+              <td><span class="status-pill is-unread">Unread</span></td>
+            </tr>
+            <tr>
+              <td>Inventory</td>
+              <td>Low Stock Alert</td>
+              <td>500g Deep Aqua Product</td>
+              <td>15 mins ago</td>
+              <td><span class="status-pill is-unread">Unread</span></td>
+            </tr>
+            <tr>
+              <td>Payment</td>
+              <td>Payment Received</td>
+              <td>Order #1054 paid via GCash</td>
+              <td>1 hour ago</td>
+              <td><span class="status-pill is-read">Read</span></td>
+            </tr>
+            <tr>
+              <td>Security</td>
+              <td>Failed Login Attempt</td>
+              <td>Incorrect password entered</td>
+              <td>2 days ago</td>
+              <td><span class="status-pill is-read">Read</span></td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="../../js/admin-nav-active.js"></script>
+</body>
+</html>
+

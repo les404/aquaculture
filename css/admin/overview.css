@@ -1,0 +1,24 @@
+.chart-placeholder {
+  border-radius: 12px;
+  background: linear-gradient(135deg, #eef2ff, #e5f3ff);
+  padding: 14px;
+}
+
+.chart-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  height: 180px;
+}
+
+.chart-bars .chart-bar {
+  flex: 1;
+  border-radius: 0;
+  background: #a5b4fc;
+  height: calc(30% + 60px);
+}
+
+.chart-bars .chart-bar.is-muted {
+  background: #e5e7eb;
+}
+

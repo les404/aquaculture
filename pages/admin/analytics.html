@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin - Analytics</title>
+  <link rel="stylesheet" href="../../css/base.css"/>
+  <link rel="stylesheet" href="../../css/admin/admin-shell.css"/>
+  <link rel="stylesheet" href="../../css/admin/analytics.css"/>
+</head>
+<body class="admin-body">
+
+<div class="admin-layout">
+  <aside class="admin-sidebar">
+    <div class="admin-sidebar-header">
+      <div class="admin-logo">ADMIN</div>
+    </div>
+    <nav class="admin-nav">
+      <div class="admin-nav-section-label">Menu</div>
+      <a class="admin-nav-item" href="overview.html"><span>Overview</span></a>
+      <a class="admin-nav-item" href="products.html"><span>Products</span></a>
+      <a class="admin-nav-item is-active" href="analytics.html"><span>Analytics</span></a>
+      <a class="admin-nav-item" href="customer.html"><span>Customer</span></a>
+
+      <div class="admin-nav-section-label">Others</div>
+      <a class="admin-nav-item" href="reports.html"><span>Reports</span></a>
+      <a class="admin-nav-item" href="accounts.html"><span>Accounts</span></a>
+      <a class="admin-nav-item" href="history.html"><span>History Logs</span></a>
+      <a class="admin-nav-item" href="notifications.html"><span>Notifications</span></a>
+      <a class="admin-nav-item admin-logout" href="../home.html"><span>Logout</span></a>
+    </nav>
+  </aside>
+
+  <main class="admin-main">
+    <header class="admin-topbar">
+      <div class="admin-topbar-title">DASHBOARD</div>
+      <div class="admin-topbar-right">
+        <span class="admin-topbar-user">Welcome, Admin</span>
+      </div>
+    </header>
+
+    <div class="admin-kpi-row">
+      <div class="kpi-card">
+        <div class="kpi-label">Sales</div>
+        <div class="kpi-value">562</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Revenue</div>
+        <div class="kpi-value">100000</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Profit</div>
+        <div class="kpi-value">30000</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Cost</div>
+        <div class="kpi-value">₱70000</div>
+      </div>
+    </div>
+
+    <div class="analytics-grid">
+      <div class="admin-panel span-2">
+        <div class="admin-panel-header">
+          <h2>Stock</h2>
+        </div>
+        <div class="chart-placeholder chart-bars colorful">
+          <div class="chart-bar"></div>
+          <div class="chart-bar"></div>
+          <div class="chart-bar"></div>
+          <div class="chart-bar"></div>
+          <div class="chart-bar"></div>
+          <div class="chart-bar"></div>
+          <div class="chart-bar"></div>
+        </div>
+      </div>
+
+      <div class="admin-panel span-2">
+        <div class="admin-panel-header">
+          <h2>Sales Revenue</h2>
+        </div>
+        <div class="chart-placeholder chart-area"></div>
+      </div>
+
+      <div class="admin-panel">
+        <div class="admin-panel-header">
+          <h2>Cost Breakdown</h2>
+        </div>
+        <div class="chart-placeholder chart-donut"></div>
+      </div>
+
+      <div class="admin-panel">
+        <div class="admin-panel-header">
+          <h2>Total Sales by Categories</h2>
+        </div>
+        <div class="chart-placeholder chart-donut small"></div>
+      </div>
+
+      <div class="admin-panel">
+        <div class="admin-panel-header">
+          <h2>Top 5 Best Seller</h2>
+        </div>
+        <ul class="list-bars">
+          <li>Deep Blue Decapsulated Brine Shrimp - NO HATCH</li>
+          <li>Blue Grass</li>
+          <li>Deep Blue Brine Shrimp</li>
+          <li>Brine Shrimp</li>
+          <li>Albino Koi Red Ear Ribbon</li>
+        </ul>
+      </div>
+
+      <div class="admin-panel">
+        <div class="report-actions">
+          <button class="btn-outline">Create Excel Report</button>
+          <button class="btn-outline">Create CSV Report</button>
+          <button class="btn-outline">Create PDF File Report</button>
+          <button class="btn-outline">Show Excel Report</button>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="../../js/admin-nav-active.js"></script>
+</body>
+</html>
+

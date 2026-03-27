@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin - History Logs</title>
+  <link rel="stylesheet" href="../../css/base.css"/>
+  <link rel="stylesheet" href="../../css/admin/admin-shell.css"/>
+  <link rel="stylesheet" href="../../css/admin/history.css"/>
+</head>
+<body class="admin-body">
+
+<div class="admin-layout">
+  <aside class="admin-sidebar">
+    <div class="admin-sidebar-header">
+      <div class="admin-logo">ADMIN</div>
+    </div>
+    <nav class="admin-nav">
+      <div class="admin-nav-section-label">Menu</div>
+      <a class="admin-nav-item" href="overview.html"><span>Overview</span></a>
+      <a class="admin-nav-item" href="products.html"><span>Products</span></a>
+      <a class="admin-nav-item" href="analytics.html"><span>Analytics</span></a>
+      <a class="admin-nav-item" href="customer.html"><span>Customer</span></a>
+
+      <div class="admin-nav-section-label">Others</div>
+      <a class="admin-nav-item" href="reports.html"><span>Reports</span></a>
+      <a class="admin-nav-item" href="accounts.html"><span>Accounts</span></a>
+      <a class="admin-nav-item is-active" href="history.html"><span>History Logs</span></a>
+      <a class="admin-nav-item" href="notifications.html"><span>Notifications</span></a>
+      <a class="admin-nav-item admin-logout" href="../home.html"><span>Logout</span></a>
+    </nav>
+  </aside>
+
+  <main class="admin-main">
+    <header class="admin-topbar">
+      <div class="admin-topbar-title">DASHBOARD</div>
+      <div class="admin-topbar-right">
+        <span class="admin-topbar-user">Welcome, Admin</span>
+      </div>
+    </header>
+
+    <div class="history-panel">
+      <div class="admin-panel">
+        <div class="admin-panel-header">
+          <h2>History Logs</h2>
+        </div>
+        <div class="table-wrapper">
+          <table class="admin-table">
+            <thead>
+            <tr>
+              <th>Date &amp; Time</th>
+              <th>Admin/User</th>
+              <th>Role</th>
+              <th>Action type</th>
+              <th>Description</th>
+              <th>Affected Item</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>2026-01-15 09:12 AM</td>
+              <td>Juan</td>
+              <td>Employee</td>
+              <td>Add Product</td>
+              <td>Added new product with initial stock and price</td>
+              <td>500g Deep Blue Aqua Product</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="../../js/admin-nav-active.js"></script>
+</body>
+</html>
+

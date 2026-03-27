@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin - Overview</title>
+  <link rel="stylesheet" href="../../css/base.css"/>
+  <link rel="stylesheet" href="../../css/admin/admin-shell.css"/>
+  <link rel="stylesheet" href="../../css/admin/overview.css"/>
+</head>
+<body class="admin-body">
+
+<div class="admin-layout">
+  <aside class="admin-sidebar">
+    <div class="admin-sidebar-header">
+      <div class="admin-logo">ADMIN</div>
+    </div>
+    <nav class="admin-nav">
+      <div class="admin-nav-section-label">Menu</div>
+      <a class="admin-nav-item is-active" href="overview.html"><span>Overview</span></a>
+      <a class="admin-nav-item" href="products.html"><span>Products</span></a>
+      <a class="admin-nav-item" href="analytics.html"><span>Analytics</span></a>
+      <a class="admin-nav-item" href="customer.html"><span>Customer</span></a>
+
+      <div class="admin-nav-section-label">Others</div>
+      <a class="admin-nav-item" href="reports.html"><span>Reports</span></a>
+      <a class="admin-nav-item" href="accounts.html"><span>Accounts</span></a>
+      <a class="admin-nav-item" href="history.html"><span>History Logs</span></a>
+      <a class="admin-nav-item" href="notifications.html"><span>Notifications</span></a>
+      <a class="admin-nav-item admin-logout" href="../home.html"><span>Logout</span></a>
+    </nav>
+  </aside>
+
+  <main class="admin-main">
+    <header class="admin-topbar">
+      <div class="admin-topbar-title">DASHBOARD</div>
+      <div class="admin-topbar-right">
+        <span class="admin-topbar-user">Welcome, Admin</span>
+      </div>
+    </header>
+
+    <div class="admin-kpi-row">
+      <div class="kpi-card">
+        <div class="kpi-label">Total Sales</div>
+        <div class="kpi-value" id="kpi-total-sales">115</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Todays Orders</div>
+        <div class="kpi-value" id="kpi-today-orders">3</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-label">Completed Orders</div>
+        <div class="kpi-value" id="kpi-completed-orders">26</div>
+      </div>
+    </div>
+
+    <div class="admin-panel">
+      <div class="admin-panel-header">
+        <h2>Overview Order</h2>
+        <span class="panel-subtitle">Monthly</span>
+      </div>
+      <div class="chart-placeholder chart-bars">
+        <div class="chart-bar is-primary"></div>
+        <div class="chart-bar is-muted"></div>
+        <div class="chart-bar is-primary"></div>
+        <div class="chart-bar is-muted"></div>
+        <div class="chart-bar is-primary"></div>
+        <div class="chart-bar is-muted"></div>
+        <div class="chart-bar is-primary"></div>
+        <div class="chart-bar is-muted"></div>
+        <div class="chart-bar is-primary"></div>
+        <div class="chart-bar is-muted"></div>
+        <div class="chart-bar is-primary"></div>
+        <div class="chart-bar is-muted"></div>
+      </div>
+    </div>
+
+    <div class="admin-panel">
+      <div class="admin-panel-header">
+        <h2>Orders</h2>
+      </div>
+      <div class="table-wrapper">
+        <table class="admin-table">
+          <thead>
+          <tr>
+            <th>No</th>
+            <th>Products</th>
+            <th>Status</th>
+            <th>Date</th>
+            <th>Buyer</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>1</td>
+            <td>Deep Blue Decapsulated Brine Shrimp - NO HATCH</td>
+            <td><span class="status-pill is-complete">Complete</span></td>
+            <td>January 2, 2026</td>
+            <td>Wilim Richards</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Deep Blue Decapsulated Brine Shrimp - NO HATCH</td>
+            <td><span class="status-pill is-complete">Complete</span></td>
+            <td>January 2, 2026</td>
+            <td>Wilim Richards</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="../../js/admin-nav-active.js"></script>
+</body>
+</html>
+

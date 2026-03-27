@@ -1,0 +1,113 @@
+.chart-placeholder {
+  border-radius: 12px;
+  background: linear-gradient(135deg, #eef2ff, #e5f3ff);
+  padding: 14px;
+}
+
+.analytics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 14px;
+}
+
+.analytics-grid .span-2 {
+  grid-column: span 2;
+}
+
+.chart-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  height: 180px;
+}
+
+.chart-bars .chart-bar {
+  flex: 1;
+  border-radius: 999px 999px 0 0;
+  background: #a5b4fc;
+  height: calc(30% + 60px);
+}
+
+.chart-bars.colorful .chart-bar:nth-child(1) { background: #4f46e5; height: 60%; }
+.chart-bars.colorful .chart-bar:nth-child(2) { background: #06b6d4; height: 40%; }
+.chart-bars.colorful .chart-bar:nth-child(3) { background: #f97316; height: 70%; }
+.chart-bars.colorful .chart-bar:nth-child(4) { background: #22c55e; height: 35%; }
+.chart-bars.colorful .chart-bar:nth-child(5) { background: #a855f7; height: 65%; }
+.chart-bars.colorful .chart-bar:nth-child(6) { background: #0ea5e9; height: 45%; }
+.chart-bars.colorful .chart-bar:nth-child(7) { background: #facc15; height: 55%; }
+
+.chart-area {
+  height: 180px;
+  background: linear-gradient(180deg, rgba(59,130,246,0.35), rgba(59,130,246,0.02));
+}
+
+.chart-donut,
+.chart-donut.small {
+  position: relative;
+  width: 180px;
+  max-width: 100%;
+  aspect-ratio: 1 / 1;
+  margin-inline: auto;
+  background: conic-gradient(#22c55e 0 40%, #0ea5e9 40% 70%, #f97316 70% 100%);
+  border-radius: 50%;
+}
+
+.chart-donut::after,
+.chart-donut.small::after {
+  content: "";
+  position: absolute;
+  inset: 26%;
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+.chart-donut.small {
+  width: 140px;
+}
+
+.list-bars {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+}
+
+.list-bars li {
+  position: relative;
+  padding-left: 10px;
+}
+
+.list-bars li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: #4f46e5;
+}
+
+.report-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.btn-outline {
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 13px;
+  border: 1px solid #4b5563;
+  background: transparent;
+  cursor: pointer;
+}
+
+.btn-outline:hover {
+  background: #111827;
+  color: #f9fafb;
+}
+
